@@ -1,0 +1,73 @@
+/* ************************************** */
+/* UTILS : (s'applique à tout le code */
+/* ************************************** */
+body{
+    color: #222222;
+font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    /* inherit: prend la couleur du "parent" le plus proche */
+}
+p{
+    max-width: 80ch;
+    justify-content: center;
+}
+
+/* ************************************** */
+/* navbar header  */
+/* ************************************** */
+
+.bt_menu{
+    display: flex;
+    justify-content: right;
+    font-size: 24px;
+   
+}
+.bt_menu i{
+    padding: 10px;
+    border: 1px solid #222222;
+}
+
+.banane ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    display: none;
+
+}
+.banane li{
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    
+}
+.banane li:hover{
+    color: teal;
+    padding-top: 10px;
+
+}
+.banane a {
+    padding: 10px 0;
+}
+.banane ul.show{
+   display:flex;
+   flex-flow: column;
+}
+
+@media screen and (min-width:480px){
+    .bt_menu{
+        display: none;
+    }
+    .banane ul{
+        display: flex;
+        justify-content: flex-end;
+        } 
+   
+}
+.bt_menu:hover{
+    color: teal;
+}
